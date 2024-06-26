@@ -1,14 +1,14 @@
 # CAT YouTube
 
-Este script te ayuda a genera un video que Call To Action para agregar en tus video de YouTube usando un video base y el script se encarga de personalizar el video con informacion de tu canal de YouTube muy basica.
+Este script te ayuda a genera un video que Call To Action para agregar en tus video de YouTube usando un video base y el script se encarga de personalizar el video con información de tu canal de YouTube muy básica.
 
-Espero despues modificar el script con lo restante en la Nota
+Espero después modificar el script con lo restante en la Nota
 
 
 
 ## Instalación
 
-Para lograr un uso satisfactorio de este script se requieres la instalacion de los sigueirntes paquetes.
+Para lograr un uso satisfactorio de este script se requieres la instalación de los siguientes paquetes.
 
 Recuerda que este script está escrito en bash, así que necesitas un entorno compatible con bash.
 
@@ -62,6 +62,7 @@ Podias usar tambien este comando para hacer todo lo anteriror.
 sudo apt-get update && sudo apt-get install -y curl grep gawk coreutils yt-dlp imagemagick ffmpeg bc fontconfig
 ```
 
+## Como usar
 Asegúrate de que todas estas herramientas están instaladas y actualizadas en tu sistema para evitar problemas de compatibilidad y errores de ejecución.
 
 También es posible que necesites configurar permisos de ejecución para tu script. Puedes hacerlo con:
@@ -69,7 +70,24 @@ También es posible que necesites configurar permisos de ejecución para tu scri
 ```sh
 chmod +x full.sh
 ```
+Ver ayuda
+
+```sh
+./full.sh  -h
+```
+
+Ejecuta el comando de la siguiente manera
+```sh
+./full.sh  -i "id_del_canal" -c "nombre_del_canal"
+``` 
+*El nombre del canal es como aparece en la url*
+
+### **Ejemplo**
+```sh
+./full.sh  -i UCS5yb75qx5GFOG-uV5JLYlQ -c chepecarlo  
+```
+
 
 ## Nota
-Lamento no modifcar la personalizacion completa para cada canal pero espero proximamenete hacerlo.
-Este mini proyecto solo estaba pensado para el canal de [ChepeCarlos](https://www.youtube.com/@chepecarlo) por eso es que el video base ya incluye la foto de perfil del canal y su nombre, pero de igual manera que se agrega lodemsas se podria modifcar para obtenr la informacion restante para personalisar por completo.
+Lamento no modificar la personalización completa para cada canal pero espero próximamente hacerlo.
+Este mini proyecto solo estaba pensado para el canal de [ChepeCarlos](https://www.youtube.com/@chepecarlo) por eso es que el video base ya incluye la foto de perfil del canal y su nombre, pero de igual manera que se agrega lo de mas se podría modificar para obtener la información restante para personalizar por completo.

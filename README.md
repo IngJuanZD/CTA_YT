@@ -78,16 +78,19 @@ Ver ayuda
 
 Ejecuta el comando de la siguiente manera
 ```sh
-./full.sh  -i "id_del_canal" -c "nombre_del_canal"
-``` 
-*El nombre del canal es como aparece en la url*
+./full.sh -u https://www.youtube.com/@USER
+```
+*El nombre del canal es como aparece en la url cambia el @USER por el canal deseado*
 
 ### **Ejemplo**
 ```sh
-./full.sh  -i UCS5yb75qx5GFOG-uV5JLYlQ -c chepecarlo  
+./full.sh -u https://www.youtube.com/@chepecarlo  
 ```
 
 
 ## Nota
 Lamento no modificar la personalización completa para cada canal pero espero próximamente hacerlo.
 Este mini proyecto solo estaba pensado para el canal de [ChepeCarlos](https://www.youtube.com/@chepecarlo) por eso es que el video base ya incluye la foto de perfil del canal y su nombre, pero de igual manera que se agrega lo de mas se podría modificar para obtener la información restante para personalizar por completo.
+
+## Nota 2
+Hay un error en el video base esta mal escrito el nombre del canal en un video proxima corrección 

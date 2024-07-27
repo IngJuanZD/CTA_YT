@@ -32,6 +32,7 @@ get_channel_info() {
 get_subscribers() {
   local url="https://www.youtube.com/channel/$channel_id"
   local subscribers=$(curl -s "$url" | tr '"' '\n' | grep "suscriptores")
+  echo "$subscribers"
 
   if [ -z "$subscribers" ]; then
     echo "No se pudo obtener el número de suscriptores."
@@ -39,9 +40,9 @@ get_subscribers() {
   fi
 
   # Procesar para obtener solo el segundo número de suscriptores en caso de duplicados
-  subscribers=$(echo "$subscribers" | awk 'NR==2')
+  #subscribers=$(echo "$subscribers" | awk 'NR==2')
 
-  echo "$subscribers" | sed 's/:/\\:/g'
+  #echo "$subscribers" | sed 's/:/\\:/g'
 }
 
 # Función para extraer IDs de video
@@ -115,7 +116,7 @@ generate_video_with_text() {
   local fuente1="YouTubeSansDark-Medium.ttf"
   local fuente2="YouTubeSansDark-Bold.ttf"
   local video_salida="CTA.mp4"
-  local posicion_suscriptores="x=180:y=983:fontsize=26:fontcolor=black"
+  local posicion_suscriptores="x=180:y=983:fontsize=35:fontcolor=black"
   local posiciones_texto=(
     "x=1534.467:y=203.687:fontsize=29:fontcolor=black"
     "x=1534.467:y=345.138:fontsize=29:fontcolor=black"
